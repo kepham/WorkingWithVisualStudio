@@ -30,6 +30,9 @@ namespace WorkingWithVisualStudio
             //{
             //    await context.Response.WriteAsync("Hello World!");
             //});
+            app.UseDeveloperExceptionPage();
+            app.UseBrowserLink();
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
     }
